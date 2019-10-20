@@ -53,7 +53,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     fileprivate func setupLayout() {
         let layout = self.collectionView.collectionViewLayout as! UPCarouselFlowLayout
-        layout.spacingMode = UPCarouselFlowLayoutSpacingMode.overlap(visibleOffset: 30)
+        layout.spacingMode = UPCarouselFlowLayoutSpacingMode.overlap(visibleOffset: 90)
     }
     
     fileprivate func createItems() -> [Character] {
