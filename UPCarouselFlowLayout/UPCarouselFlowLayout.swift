@@ -59,7 +59,8 @@ open class UPCarouselFlowLayout: UICollectionViewFlowLayout {
         let isHorizontal = (self.scrollDirection == .horizontal)
         
         let yInset = (collectionSize.height - self.itemSize.height) / 2
-        let xInset = ((collectionSize.width - self.itemSize.width) / 2) - 75
+        var xInset = ((collectionSize.width - self.itemSize.width) / 2) - 75
+        xInset = xInset < 15 ? 15 : xInset
         self.sectionInset = UIEdgeInsets.init(top: yInset, left: xInset, bottom: yInset, right: xInset)
         
         let side = isHorizontal ? self.itemSize.width : self.itemSize.height
